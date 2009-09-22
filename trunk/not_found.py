@@ -5,7 +5,7 @@
 #    
 #    not_found.py handles URIs that are not accounted for
 #    
-#    $Id: not_found.py 10 2009-05-05 00:01:06Z greg.heidorn@gmail.com $
+#    $Id$
 import cgi
 import logging
 import os
