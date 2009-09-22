@@ -1,0 +1,29 @@
+application: cardtips
+version: live
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+
+- url: /favicon.ico
+  static_files: img/favicon.ico
+  upload: img/favicon.ico
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /img
+  static_dir: img
+
+- url: (/|/cardtip|/examples)
+  script: main.py
+  
+- url: /*
+  script: not_found.py
