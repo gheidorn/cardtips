@@ -5,7 +5,7 @@
 #    
 #    main.py contains the request handlers for the site
 #    
-#    $Id: main.py 61 2009-07-17 22:18:21Z greg.heidorn $
+#    $Id$
 import os
 import logging
 import wsgiref.handlers
